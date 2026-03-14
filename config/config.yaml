@@ -1,0 +1,38 @@
+puzzles:
+  tier1_2x2:
+    - name: "2x2_all_unknown"
+      size: 2
+      grid: [[null, null], [null, null]]
+      solutions: 2
+    - name: "2x2_one_clue_v0"
+      size: 2
+      grid: [[1, null], [null, null]]
+      solutions: 1
+    - name: "2x2_two_clues"
+      size: 2
+      grid: [[1, null], [null, 0]]
+      solutions: 1
+    - name: "2x2_three_clues"
+      size: 2
+      grid: [[1, 0], [null, 1]]
+      solutions: 1
+
+  tier2_4x4:
+    - name: "4x4_two_unknowns"
+      size: 4
+      grid: [[0, 1, 2, 3], [2, 3, null, 1], [1, null, 3, 2], [3, 2, 1, 0]]
+      solutions: 1
+    - name: "4x4_four_unknowns"
+      size: 4
+      grid: [[null, 1, 2, null], [2, null, 0, 1], [1, 0, null, 2], [3, 2, 1, 0]]
+      solutions: 1
+
+grover:
+  max_iterations: null
+  shots: 1024
+  simulator: "statevector"
+
+visualization:
+  show_intermediate_states: true
+  animation_delay_ms: 500
+  color_scheme: "viridis"

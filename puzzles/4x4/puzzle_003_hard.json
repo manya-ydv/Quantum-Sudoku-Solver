@@ -1,0 +1,6 @@
+{
+  "size": 4,
+  "block_size": 2,
+  "grid": [[null, 1, null, 3], [2, null, 0, null], [null, 0, null, 2], [3, null, 1, null]],
+  "difficulty": "hard"
+}
